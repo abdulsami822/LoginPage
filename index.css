@@ -49,6 +49,7 @@ label {
   align-items: center;
   -webkit-box-shadow: 0 0 8px #888;
   box-shadow: 0 0 8px #888;
+  border-radius: 2rem;
 }
 
 .welcome-image {
@@ -81,9 +82,9 @@ label {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border-radius: 2.5rem;
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
+  border-radius: 2rem;
+  /* border-top-left-radius: 0;
+  border-bottom-left-radius: 0; */
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
@@ -91,7 +92,13 @@ label {
   -ms-flex-align: center;
   align-items: center;
   width: 50%;
-  background-image: -webkit-gradient(linear, left top, right top, from(#7f00ff), to(#e100ff));
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#7f00ff),
+    to(#e100ff)
+  );
   background-image: linear-gradient(to right, #7f00ff, #e100ff);
   -webkit-transition: all 0.5s linear;
   transition: all 0.5s linear;
@@ -146,12 +153,12 @@ label {
 
 .move-forward {
   -webkit-transform: translateX(100%);
-          transform: translateX(100%);
+  transform: translateX(100%);
 }
 
 .move-backward {
   -webkit-transform: translateX(-100%);
-          transform: translateX(-100%);
+  transform: translateX(-100%);
 }
 
 .login-form-container {
@@ -216,7 +223,13 @@ label {
 
 .login-form h1 {
   font-size: 40px;
-  background-image: -webkit-gradient(linear, left top, right top, from(#7f00ff), to(#e100ff));
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#7f00ff),
+    to(#e100ff)
+  );
   background-image: linear-gradient(to right, #7f00ff, #e100ff);
   background-clip: text;
   -webkit-background-clip: text;
@@ -330,11 +343,11 @@ input:focus ~ .input-border:before {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .error-message {
@@ -409,7 +422,7 @@ input:focus ~ .input-border:before {
 
 #welcomeLoginBtnDupe:hover .down-arrow {
   -webkit-transform: translateY(3px);
-          transform: translateY(3px);
+  transform: translateY(3px);
 }
 
 @media (max-width: 992px) {
@@ -417,7 +430,6 @@ input:focus ~ .input-border:before {
     -webkit-transform: translateX(0%);
     transform: translateX(0%);
   }
-  
   .move-forward {
     -webkit-transform: translateX(0%);
     transform: translateX(0%);
@@ -432,7 +444,7 @@ input:focus ~ .input-border:before {
   }
   .mbl-anim {
     -webkit-transform: translateY(80%);
-            transform: translateY(80%);
+    transform: translateY(80%);
     border-radius: 50% !important;
   }
   #welcomeLoginBtn {
