@@ -26,23 +26,6 @@ const formData = {
   password: "",
 };
 
-/*loginFormContainer.classList.add("hide");
-welcomeLoginSection.classList.add("hide");
-const showHideLogin = () => {
-  commonSection.classList.toggle("move-common-section");
-  welcomeSection.classList.toggle("hide");
-  welcomeLoginSection.classList.toggle("hide");
-  welcomeImage.classList.toggle("hide");
-  loginFormContainer.classList.toggle("hide");
-  if (screen.width < 992) {
-    commonSection.classList.add("hide");
-  }
-};
-
-welcomeLoginBtn.addEventListener("click", showHideLogin);
-backBtn.addEventListener("click", showHideLogin);
-*/
-//malik code
 loginFormContainer.classList.toggle("hide");
 welcomeLoginSection.classList.add("hide");
 const showHideLogin = () => {
@@ -67,7 +50,7 @@ const showHideLogin = () => {
 };
 welcomeLoginBtn.addEventListener("click", showHideLogin);
 backBtn.addEventListener("click", showHideLogin);
-//malik code
+
 welcomeLoginBtnDupe.addEventListener("click", function () {
   commonSection.classList.add("mbl-anim");
 });
