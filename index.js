@@ -124,3 +124,14 @@ passwordVisibleToggle.addEventListener("click", function () {
     passwordVisibleToggle.classList.add("fa-eye");
   }
 });
+
+
+var resizeTimeout;
+window.addEventListener("resize", function (event) {
+  if (window.innerWidth < 992) {
+    clearTimeout(resizeTimeout);
+    resizeTimeout = setTimeout(function () {
+      window.location.reload();
+    }, 50);
+  }
+});
