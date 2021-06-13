@@ -413,6 +413,20 @@ input:focus ~ .input-border:before {
 }
 
 @media (max-width: 992px) {
+  .move-backward {
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);
+  }
+  
+  .move-forward {
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);
+  }
+
+  .loginFormContainer {
+    display: block;
+  }
+
   .break-move-forward {
     display: none;
   }
